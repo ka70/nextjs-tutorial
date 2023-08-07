@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "dev": "WATCHPACK_POLLING=true next dev",
+    "dev": "next -p 4000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

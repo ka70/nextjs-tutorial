@@ -1,68 +1,11 @@
 {
-    "name": "NEXTjs",
-    "dockerFile": "Dockerfile",
-    // "dockerComposeFile": "./docker-compose.yml",
-    // "service": "eneos-sep",
-    // "extensions": [
-    //     "ms-python.python",
-    //     "drawio.vscode",
-    //     "ms-toolsai.jupyter",
-    //     "mhutchie.git-graph",
-    //     "eamodio.gitlens",
-    //     "ms-python.black-formatter",
-    //     "ms-python.isort",
-    //     "ms-python.flake8",
-    //     "ms-python.mypy-type-checker",
-    //     "redhat.vscode-yaml",
-    //     "njpwerner.autodocstring"
-    // ],
-    // "settings": {
-    //     "terminal.integrated.shell.linux": "/bin/bash",
-    //     "python.pythonPath": "${workspaceFolder}/.pyenv/shims/python",
-    //     "[python]": {
-    //         "editor.defaultFormatter": "ms-python.black-formatter",
-    //         "editor.codeActionsOnSave": {
-    //             "source.organizeImports": true
-    //         },
-    //     },
-    //     "isort.args": [
-    //         "--profile",
-    //         "black"
-    //     ],
-    //     "python.linting.flake8Enabled": true,
-    //     "python.linting.mypyEnabled": true,
-    //     "python.sortImports.enabled": true,
-    //     "python.linting.enabled": true,
-    //     "python.linting.flake8Args": [
-    //         "--max-line-length=88"
-    //     ],
-    //     "python.linting.mypyArgs": [
-    //         "--warn-return-any",
-    //         "--no-implicit-optional",
-    //         "--disallow-untyped-calls",
-    //         "--disallow-untyped-defs",
-    //         "--ignore-missing-imports",
-    //         "--follow-imports=skip",
-    //         "--follow-imports=silent",
-    //         "--ignore-missing-imports",
-    //         "--show-column-numbers",
-    //         "--no-pretty",
-    //     ],
-    //     "editor.formatOnSave": true,
-    // },
-    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
-    "workspaceFolder": "/workspace",
-    // "features": {
-    //     "docker-in-docker": {
-    //         "version": "latest"
-    //     }
-    // },
-    // "mounts": [
-    //     {
-    //         "source": "${localWorkspaceFolder}/.aws",
-    //         "target": "/root/.aws",
-    //         "type": "bind",
-    //         "consistency": "cached"
-    //     }
-    // ]
+  "name": "Nexjs",
+  "dockerFile": "./Dockerfile",
+  // "service": "frontend",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "workspaceFolder": "/workspace",
+  "extensions": [
+    "dsznajder.es7-react-js-snippets",
+    "dbaeumer.vscode-eslint"
+  ]
 }

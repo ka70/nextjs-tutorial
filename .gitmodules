@@ -1,0 +1,3 @@
+[submodule "chakra-tutorial"]
+	path = chakra-tutorial
+	url = https://github.com/ka70/nextjs-tutorial.git
