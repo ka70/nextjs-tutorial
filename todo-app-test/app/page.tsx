@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaMoon, FaSun, FaTwitter, } from "react-icons/fa";
 import AddTask from "../components/AddTask";
 import TaskList from "../components/tasks";
-import Task from './types';
+import Task from './type';
 
 
 export default function Home() {

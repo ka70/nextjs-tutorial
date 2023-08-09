@@ -1,15 +1,14 @@
-import { Box, HStack, Image, StackDivider, Text, VStack } from '@chakra-ui/react';
-import img from '../images/empty.svg';
-import DeleteTask from './DeleteTask';
+import { Box, Flex, HStack, Image, StackDivider, Text, VStack } from '@chakra-ui/react';
+import { DeleteAllTask, DeleteTask } from './DeleteTask';
 import UpdateTask from './UpdateTask';
-import TaskListProps from './type';
+import { TaskListProps } from './type';
 
 function TaskList({ tasks, updateTask, deleteTask, deleteTaskAll, checkTask }: TaskListProps) {
     if (!tasks.length) {
         return (
             <>
                 <Box maxW='80%'>
-                    <Image mt='20px' w='98%' maxW='350' src={img} alt='Sua lista está vazia :(' />
+                    <Image mt='20px' w='98%' maxW='350' src='./empty.svg' alt='タスクが空です:(' />
                 </Box>
             </>
         );
@@ -45,9 +44,9 @@ function TaskList({ tasks, updateTask, deleteTask, deleteTaskAll, checkTask }: T
                 ))}
             </VStack>
 
-            {/* <Flex>
+            <Flex>
                 <DeleteAllTask deleteTaskAll={deleteTaskAll} />
-            </Flex> */}
+            </Flex>
         </>
     );
 }

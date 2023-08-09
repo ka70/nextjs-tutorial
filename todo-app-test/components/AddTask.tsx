@@ -55,8 +55,8 @@ export default function AddTask({ addTask }: AddTaskProps) {
                 />
                 <Button
                     colorScheme='blue'
-                    pl='8'
-                    pr='8'
+                    pl='10'
+                    pr='10'
                     h='46'
                     type='submit'
                     fontSize='20'
