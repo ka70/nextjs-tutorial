@@ -2,7 +2,7 @@ import { Button, HStack, Input, useToast } from "@chakra-ui/react";
 import { nanoid } from 'nanoid';
 import { useState } from 'react';
 
-import { AddTaskProps, Task } from './types';
+import { AddTaskProps, Task } from './type';
 
 
 export default function AddTask({ addTask }: AddTaskProps) {

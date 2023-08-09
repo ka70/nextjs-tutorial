@@ -2,7 +2,7 @@ import { Box, HStack, Image, StackDivider, Text, VStack } from '@chakra-ui/react
 import img from '../images/empty.svg';
 import DeleteTask from './DeleteTask';
 import UpdateTask from './UpdateTask';
-import { TaskListProps } from './types';
+import TaskListProps from './type';
 
 function TaskList({ tasks, updateTask, deleteTask, deleteTaskAll, checkTask }: TaskListProps) {
     if (!tasks.length) {
