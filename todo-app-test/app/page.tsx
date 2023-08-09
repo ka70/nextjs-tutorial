@@ -1,4 +1,4 @@
-import { Box, Image, VStack } from '../common/components'
+import { Box, Image, VStack } from '../components/ChakraUi'
 
 export default function Home() {
   return (
