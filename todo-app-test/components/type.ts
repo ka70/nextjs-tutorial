@@ -1,0 +1,14 @@
+// types.ts
+export interface Task {
+    id: number;
+    body: string;
+    check: boolean;
+}
+
+export interface TaskListProps {
+    tasks: Task[];
+    updateTask: (taskId: number, updatedTask: string) => void;
+    deleteTask: (taskId: number) => void;
+    deleteTaskAll: () => void;
+    checkTask: (taskId: number) => void;
+}

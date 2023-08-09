@@ -5,13 +5,8 @@ import { useEffect, useState } from "react";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaMoon, FaSun, FaTwitter, } from "react-icons/fa";
 import AddTask from "../components/AddTask";
 import TaskList from "../components/tasks";
+import Task from './types';
 
-
-interface Task {
-  id: number;
-  body: string;
-  check: boolean;
-}
 
 export default function Home() {
   const toast = useToast();
