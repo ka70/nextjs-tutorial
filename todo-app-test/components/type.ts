@@ -1,4 +1,5 @@
 // types.ts
+
 export interface Task {
     id: number;
     body: string;
@@ -11,4 +12,12 @@ export interface TaskListProps {
     deleteTask: (taskId: number) => void;
     deleteTaskAll: () => void;
     checkTask: (taskId: number) => void;
+}
+
+export interface AddTaskProps {
+    addTask: (task: Task) => void;
+}
+
+export interface DeleteAllTaskProps {
+    deleteTaskAll: () => void;
 }

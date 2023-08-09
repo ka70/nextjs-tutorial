@@ -2,15 +2,8 @@ import { Button, HStack, Input, useToast } from "@chakra-ui/react";
 import { nanoid } from 'nanoid';
 import { useState } from 'react';
 
-interface Task {
-    id: string;
-    body: string;
-    check: boolean;
-}
+import { AddTaskProps, Task } from './types';
 
-interface AddTaskProps {
-    addTask: (task: Task) => void;
-}
 
 export default function AddTask({ addTask }: AddTaskProps) {
     const toast = useToast();
