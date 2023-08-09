@@ -21,3 +21,8 @@ export interface AddTaskProps {
 export interface DeleteAllTaskProps {
     deleteTaskAll: () => void;
 }
+
+export interface DeleteTaskProps {
+    task: Task;
+    deleteTask: (id: string, onClose: () => void) => void;
+}
