@@ -1,7 +1,7 @@
 import { Box, Image, VStack } from '../components/ChakraUi';
 
 export default function Home() {
-  const imageSrc = '../images/vercel.svg'; // ここに定数としてsrcを設定
+  const imageSrc = '.vercel.svg'; // ここに定数としてsrcを設定
 
   return (
     <VStack h={200} justify='center' bg='gray.100'>
