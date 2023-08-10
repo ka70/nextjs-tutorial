@@ -1,20 +1,27 @@
-import Link from 'next/link';
 import UserList from './UserList';
 
-
 const Page = async () => {
+    const response = await fetch('http://localhost:3200/api', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            name: 'John',
+            email: 'john@example.com',
+        }),
+    });
+
+    const data = await response.json();
+
+    console.log(data);
+
     return (
-        <main>
-            <div className="m-4">
-                <h1 className="text-lg font-bold">ユーザ一覧</h1>
-                <UserList />
-            </div>
-            <div className="flex flex-col items-center">
-                <Link href="/about" className="underline text-2xl">
-                    About
-                </Link>
-            </div>
-        </main>
+        <div className="m-4">
+            <h1 className="text-lg font-bold">ユーザ一覧</h1>
+            {/* @ts-expect-error Async Server Component */}
+            <UserList />
+        </div>
     );
 };
 
